@@ -1,0 +1,157 @@
+<!-- index.js in /views folder --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+
+  <!--CSS Files-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='/content/style.css' />
+  <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+</head>
+<body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Vaibhav</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"><i class="fa-solid fa-earth-americas fa-spin fa-spin-reverse"></i> Home</a>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"><i class="fa-solid fa-sitemap fa-spin fa-spin-reverse"></i> About</a>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#project"><i class="fa-solid fa-briefcase fa-spin"></i> Project</a>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact"><i class="fa-solid fa-phone fa-spin"></i> Contact Us</a>
+        
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+     <div id="home" >
+      <header class="jumbotron text-center">
+      <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>A Radio Host and Small Business Owner</p>
+      </div>
+    </header>
+    </div>
+
+    <!-- About Me In Hompe Page Section -->
+    <div id="/home" class="container">
+      <div class="py-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>I Am Vaibhav! :)</h2>
+            <p>
+              Hi there! I'm a student in Canada and used to be a radio host and own a small business in sunny South Africa. Passionate about the airwaves and entrepreneurship, I thrive on creativity and community engagement. Join me on my journey as I juggle the mic and my business in the heart of this vibrant nation! 📻🇿🇦📈
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <!-- Adding an image of myself -->
+            <img src="/images/poster.jpg" alt="My Image" class="img-fluid rounded-circle">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Page -->
+        <section id = "about">
+            <div class="container">
+              <div class="py-5">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p>
+                      Greetings! I'm a dedicated student in Canada and used to be a radio host and own a small business based in the picturesque landscapes of South Africa. My journey began when I embarked on the exciting adventure of hosting my very own radio show. As a student radio host back in grade 10 in South Africa, I've honed my skills in creating captivating content, curating playlists, and connecting with a diverse audience. It's a platform that allows me to share stories, discuss important issues, and showcase the rich cultural tapestry of South Africa. Being on the airwaves is not just a passion; it's a commitment to fostering community engagement and providing a platform for voices that often go unheard. In addition to my radio endeavors, I also wear the hat of a small business owner. My venture is deeply rooted in the South African spirit, and it's a testament to my entrepreneurial drive. As a business owner, I've built a unique and thriving enterprise that reflects the vibrancy and creativity of our nation. My small business allows me to contribute to the local economy and create job opportunities, all while sharing the beauty of South African culture with the world. This dual role as a student and used to be a radio host and a small business owner is a journey I'm passionate about, and I'm excited to continue making a positive impact in both these dynamic worlds. Join me in this exciting adventure! 📻🇿🇦📈
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+    <!-- Projects In Home Page Section -->
+    <div id="/home" class="container">
+      <div class="py-5">
+        <h2>Projects</h2>
+        <div class="row">
+
+          <!-- Project 1 -->
+          <div class="col-lg-4" id = "project" >
+              <div class="card">
+                <img src="/images/radiohost.png" alt="Radio Host">
+                <div class="card-body">
+                  <h5 class="card-title">Radio Hosting</h5>
+                  <p class="card-text">I used to be a South African student radio host who united the nation through storytelling and music, fostering community connections on the airwaves. 📻🇿🇦🎤</p>
+                </div>
+              </div>
+          </div>
+
+          <!--  Project 2 -->
+          <div class="col-lg-4" id = "project">
+              <div class="card">
+                <img src="/images/smallbusiness.jpeg" alt="Small Business">
+                <div class="card-body">
+                  <h5 class="card-title">Small Business Owner</h5>
+                  <p class="card-text">I own a South African small business, currently studying in Canada, passionate about showcasing our culture and contributing to the local economy. 🇿🇦📈🛍️</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+        <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Toronto, CA<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +1 (457) 123 4567<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        </div>
+        <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                </div>
+                <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <%- include('footer'); -%> 
+
+  <!--Scripts Files-->
+  <script src = "/scripts/app.js"></script>
+  <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src = "/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* style.css in /public/content */
+
+/* Adding a custom CSS class to style the header */
+.header {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Styling the header h1 and p */
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+/* Styling the About Me section */
+#about {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+#about h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#about p {
+  font-size: 16px;
+}
+
+/* Styling the project cards */
+#projects .card {
+  border: none;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#projects .card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+#projects .card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#projects .card-text {
+  font-size: 14px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+/* CSS for the footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222; /* Darker background color */
+  color: #f6f2f2; /* Text color for the footer */
+  padding: 10px 0; /* Reduce the padding to make the footer smaller */
+}
