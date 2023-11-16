@@ -1,0 +1,124 @@
+<!-- add.ejs in /views/book folder --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+
+  <!--CSS Files-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='/content/style.css' />
+  <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+</head>
+<body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Vaibhav</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-earth-americas fa-spin fa-spin-reverse"></i> Home</a>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-sitemap fa-spin fa-spin-reverse"></i> About</a>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-briefcase fa-spin"></i> Project</a>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/book-list"><i class="fa-solid fa-book fa-spin"></i> Books</a>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-phone fa-spin"></i> Contact Us</a>
+        
+          </form>
+        </div>
+      </div>
+    </nav>
+<main>
+    <!-- Content For The Add Page -->
+    <div class = "container mt-5"> 
+        <div class = "row justify-content-center">
+            <div class = "col-md-6">
+                <div class = "card">
+                    <div class = "card-header"> 
+                        <h1 class = "mb-0">Add New Book</h1>
+                    </div>
+                    <div class = "card-body">
+                        <form method = "post" action="/book-list/add">
+                            <div class = "form-group">
+                                <label for = "NameTextField">Book Title</label>
+                                <input type = "text" class = "form-control"
+                                    id = "NameTextField"
+                                    placeholder = "Enter The Book Title"
+                                    Name = "Name" required>
+                            </div>
+
+                            <div class = "form-group">
+                                <label for = "AuthorTextField">Author</label>
+                                <input type = "text" class = "form-control"
+                                    id = "AuthorTextField"
+                                    placeholder = "Enter The Author"
+                                    Name = "Author" required>
+                            </div>
+
+                            <div class = "form-group">
+                                <label for = "PublishedTextField">Published Year</label>
+                                <input type = "text" class = "form-control"
+                                    id = "PublishedTextField"
+                                    placeholder = "Enter The Year Published"
+                                    Name = "Published" required>
+                            </div>
+
+                            <div class = "form-group">
+                                <label for = "DescriptionTextField">Description</label>
+                                <textarea type = "text" class = "form-control"
+                                    id = "DescriptionTextField"
+                                    placeholder = "Enter The Description"
+                                    Name = "Description" required></textarea>
+                            </div>
+
+                            <div class = "form-group">
+                                <label for = "PriceTextField">Price</label>
+                                <input type = "text" class = "form-control"
+                                    id = "PriceTextField"
+                                    placeholder = "Enter The Price"
+                                    Name = "Price" required>
+                            </div>
+                            <br>
+
+                            <div class = "form-group">
+                                <button type ="submit" class = "btn-btn-primary">
+                                  <i class = "fas fa-plus-circle"></i> Add Book
+                                </button>
+
+                                <a href = "/book-list" class = "btn btn-secondary">
+                                    <i class = "fas fa-undo"></i>Cancel 
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+ <!--           -->
+
+  <!--Scripts Files-->
+  <script src = "/scripts/app.js"></script>
+  <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src = "/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>
